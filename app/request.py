@@ -2,6 +2,7 @@ from app import app
 import urllib.request,json
 from .models import articles , sources
 
+
 Sources = sources.Sources
 Articles = articles.Articles
 
@@ -48,7 +49,7 @@ def process_results(source_list):
         
 
         if name:
-            source_object = Source(id,name,description)
+            source_object = Sources(id,name,description)
             source_results.append(source_object)
 
     return source_results
