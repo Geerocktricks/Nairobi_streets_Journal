@@ -1,5 +1,5 @@
 # Article class
-class Article:
+class Articles:
     '''
     Article class to define Objects
     '''
