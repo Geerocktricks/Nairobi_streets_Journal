@@ -1,5 +1,7 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro %}
 <body>
+    {% block content %}
     <!-- business_source section  -->
     <h3>BUSINESS</h3>
     <ul>
@@ -25,4 +27,5 @@
      <ul>
         {{ macro.displaySourceList(sports) }}
     </ul>
+    {% endblock %}
 </body>
